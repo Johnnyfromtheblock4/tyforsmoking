@@ -1,0 +1,97 @@
+body {
+  background: linear-gradient(#1c1c1c, #292929, #1c1c1c);
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.game-wrapper {
+  max-width: 520px;
+  margin: 20px auto;
+  border: 8px solid #555;
+  background: #000;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 0 12px #000;
+}
+
+canvas {
+  background: #111;
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #fff;
+}
+
+.progress-bar-container {
+  background-color: #222;
+  border: 2px solid #fff;
+  height: 18px;
+  margin: 12px auto;
+  width: 90%;
+  border-radius: 5px;
+}
+
+#cigBar {
+  background: linear-gradient(to right, #ff0000, #ff9900, #ccc);
+  height: 100%;
+  width: 100%;
+  min-width: 5%; /* Prevents the bar from disappearing completely */
+  transition: width 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  background-color: #111;
+  color: #0f0;
+  border: 2px solid #0f0;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+#score {
+  font-size: 14px;
+}
+
+#messageBox {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 10px;
+  display: none;
+}
+
+#messageBox.win {
+  color: #0f0;
+}
+
+#messageBox.lose {
+  color: #f00;
+}
+
+.hidden {
+  display: none;
+}
+
+#nameInputContainer input {
+  padding: 6px;
+  font-family: 'Courier New';
+  font-size: 14px;
+}
+
+#leaderboardList {
+  text-align: left;
+  padding-left: 40px;
+}
