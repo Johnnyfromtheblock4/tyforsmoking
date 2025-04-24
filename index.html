@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Break the Habit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-wrapper">
+    <h1>🚬 BREAK THE HABIT 🚬</h1>
+    <canvas id="gameCanvas" width="480" height="640"></canvas>
+
+    <div class="progress-bar-container">
+      <div id="cigBar"></div>
+    </div>
+
+    <div class="controls">
+      <button id="musicToggle">🔊 Toggle Music</button>
+      <button id="restartBtn">🔁 Restart</button>
+      <div id="score">Score: 0</div>
+    </div>
+
+    <div id="messageBox"></div>
+
+    <div id="nameInputContainer" class="hidden">
+      <p>🏆 Enter your name for the leaderboard:</p>
+      <input type="text" id="playerName" maxlength="10" placeholder="Your name" />
+      <button id="submitName">Submit</button>
+    </div>
+
+    <div id="leaderboardContainer" class="hidden">
+      <h3>🏅 Leaderboard</h3>
+      <ol id="leaderboardList"></ol>
+    </div>
+  </div>
+
+  <audio id="gameMusic" loop>
+    <source src="files/music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
